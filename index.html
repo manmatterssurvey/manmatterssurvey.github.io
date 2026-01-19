@@ -605,19 +605,19 @@
                     <label class="question-label">4. How physically active are you in a typical week?</label>
                     <div class="options-list">
                         <div class="option-item" onclick="selectRadio(this, 's1_activity', event)">
-                            <input type="radio" name="s1_activity" value="High">
+                            <input type="radio" name="s1_activity" value="High (4+ times per week)">
                             <label>High (4+ times per week)</label>
                         </div>
                         <div class="option-item" onclick="selectRadio(this, 's1_activity', event)">
-                            <input type="radio" name="s1_activity" value="Moderate">
+                            <input type="radio" name="s1_activity" value="Moderate (2-4 times per week)">
                             <label>Moderate (2-4 times per week)</label>
                         </div>
                         <div class="option-item" onclick="selectRadio(this, 's1_activity', event)">
-                            <input type="radio" name="s1_activity" value="Light">
+                            <input type="radio" name="s1_activity" value="Light (1-2 times per week)">
                             <label>Light (1-2 times per week)</label>
                         </div>
                         <div class="option-item" onclick="selectRadio(this, 's1_activity', event)">
-                            <input type="radio" name="s1_activity" value="Not active">
+                            <input type="radio" name="s1_activity" value="Not active (little to no exercise)">
                             <label>Not active (little to no exercise)</label>
                         </div>
                     </div>
@@ -628,19 +628,19 @@
                     <label class="question-label">5. How would you describe your diet discipline?</label>
                     <div class="options-list">
                         <div class="option-item" onclick="selectRadio(this, 's1_diet', event)">
-                            <input type="radio" name="s1_diet" value="Very disciplined">
+                            <input type="radio" name="s1_diet" value="Very disciplined — I track macros/calories and follow a structured plan">
                             <label>Very disciplined — I track macros/calories and follow a structured plan</label>
                         </div>
                         <div class="option-item" onclick="selectRadio(this, 's1_diet', event)">
-                            <input type="radio" name="s1_diet" value="Moderately disciplined">
+                            <input type="radio" name="s1_diet" value="Moderately disciplined — I'm mindful of what I eat but don't track strictly">
                             <label>Moderately disciplined — I'm mindful of what I eat but don't track strictly</label>
                         </div>
                         <div class="option-item" onclick="selectRadio(this, 's1_diet', event)">
-                            <input type="radio" name="s1_diet" value="Somewhat disciplined">
+                            <input type="radio" name="s1_diet" value="Somewhat disciplined — I try to eat healthy but inconsistent">
                             <label>Somewhat disciplined — I try to eat healthy but inconsistent</label>
                         </div>
                         <div class="option-item" onclick="selectRadio(this, 's1_diet', event)">
-                            <input type="radio" name="s1_diet" value="Not very disciplined">
+                            <input type="radio" name="s1_diet" value="Not very disciplined — I eat what's convenient/available">
                             <label>Not very disciplined — I eat what's convenient/available</label>
                         </div>
                     </div>
@@ -795,19 +795,19 @@
                     <label class="question-label">7. How would you describe your overall approach to health and fitness?</label>
                     <div class="options-list">
                         <div class="option-item" onclick="selectRadio(this, 's1_approach', event)">
-                            <input type="radio" name="s1_approach" value="Core identity">
+                            <input type="radio" name="s1_approach" value="It's a core part of my identity — I prioritize it daily">
                             <label>It's a core part of my identity — I prioritize it daily</label>
                         </div>
                         <div class="option-item" onclick="selectRadio(this, 's1_approach', event)">
-                            <input type="radio" name="s1_approach" value="Actively improving">
+                            <input type="radio" name="s1_approach" value="I'm actively working on improving my health/fitness">
                             <label>I'm actively working on improving my health/fitness</label>
                         </div>
                         <div class="option-item" onclick="selectRadio(this, 's1_approach', event)">
-                            <input type="radio" name="s1_approach" value="Struggle with consistency">
+                            <input type="radio" name="s1_approach" value="I care about it but struggle with consistency">
                             <label>I care about it but struggle with consistency</label>
                         </div>
                         <div class="option-item" onclick="selectRadio(this, 's1_approach', event)">
-                            <input type="radio" name="s1_approach" value="Not a priority">
+                            <input type="radio" name="s1_approach" value="I know I should care more but it's not a priority right now">
                             <label>I know I should care more but it's not a priority right now</label>
                         </div>
                     </div>
@@ -839,43 +839,43 @@
                     <label class="question-label">1. Which of the following products do you currently use?</label>
                     <p class="question-hint">Select all that apply</p>
                     <div class="options-list" id="productsList">
-                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products'); updateProductTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products', event); updateProductTable();">
                             <input type="checkbox" name="s2_products" value="Whey protein / protein powder">
                             <label>Whey protein / protein powder</label>
                         </div>
-                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products'); updateProductTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products', event); updateProductTable();">
                             <input type="checkbox" name="s2_products" value="Protein bars / ready-to-drink protein">
                             <label>Protein bars / ready-to-drink protein</label>
                         </div>
-                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products'); updateProductTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products', event); updateProductTable();">
                             <input type="checkbox" name="s2_products" value="Creatine">
                             <label>Creatine</label>
                         </div>
-                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products'); updateProductTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products', event); updateProductTable();">
                             <input type="checkbox" name="s2_products" value="Pre-workout">
                             <label>Pre-workout</label>
                         </div>
-                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products'); updateProductTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products', event); updateProductTable();">
                             <input type="checkbox" name="s2_products" value="Shilajit">
                             <label>Shilajit</label>
                         </div>
-                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products'); updateProductTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products', event); updateProductTable();">
                             <input type="checkbox" name="s2_products" value="Magnesium">
                             <label>Magnesium</label>
                         </div>
-                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products'); updateProductTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products', event); updateProductTable();">
                             <input type="checkbox" name="s2_products" value="Fish oil / Omega-3">
                             <label>Fish oil / Omega-3</label>
                         </div>
-                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products'); updateProductTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products', event); updateProductTable();">
                             <input type="checkbox" name="s2_products" value="Hair / Beard care products">
                             <label>Hair / Beard care products (serums, oils, minoxidil)</label>
                         </div>
-                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products'); updateProductTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products', event); updateProductTable();">
                             <input type="checkbox" name="s2_products" value="Skin care products">
                             <label>Skin care products (face wash, serums, moisturizers)</label>
                         </div>
-                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products'); updateProductTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's2_products', event); updateProductTable();">
                             <input type="checkbox" name="s2_products" value="None">
                             <label>None of the above</label>
                         </div>
@@ -935,19 +935,19 @@
                     
                     <div class="category-header">Devices</div>
                     <div class="options-list" id="techList">
-                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech'); updateTechTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech', event); updateTechTable();">
                             <input type="checkbox" name="s3_tech" value="Smartwatch">
                             <label>Smartwatch (e.g., Apple Watch, Garmin)</label>
                         </div>
-                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech'); updateTechTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech', event); updateTechTable();">
                             <input type="checkbox" name="s3_tech" value="Fitness Band">
                             <label>Fitness Band (e.g., Fitbit, Whoop)</label>
                         </div>
-                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech'); updateTechTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech', event); updateTechTable();">
                             <input type="checkbox" name="s3_tech" value="Sleep tracker">
                             <label>Sleep tracker (e.g., Ultrahuman, Oura, Gabit)</label>
                         </div>
-                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech'); updateTechTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech', event); updateTechTable();">
                             <input type="checkbox" name="s3_tech" value="Smart scale">
                             <label>Smart scale</label>
                         </div>
@@ -955,19 +955,19 @@
                     
                     <div class="category-header">Apps</div>
                     <div class="options-list">
-                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech'); updateTechTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech', event); updateTechTable();">
                             <input type="checkbox" name="s3_tech" value="Workout / fitness tracking app">
                             <label>Workout / fitness tracking (e.g., Strava, Nike Training, Cult.fit)</label>
                         </div>
-                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech'); updateTechTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech', event); updateTechTable();">
                             <input type="checkbox" name="s3_tech" value="Calorie / food tracking app">
                             <label>Calorie / food tracking (e.g., HealthifyMe, MyFitnessPal)</label>
                         </div>
-                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech'); updateTechTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech', event); updateTechTable();">
                             <input type="checkbox" name="s3_tech" value="Meditation / mental wellness app">
                             <label>Meditation / mental wellness (e.g., Headspace, Calm)</label>
                         </div>
-                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech'); updateTechTable();">
+                        <div class="option-item" onclick="toggleCheckbox(this, 's3_tech', event); updateTechTable();">
                             <input type="checkbox" name="s3_tech" value="None">
                             <label>None of the above</label>
                         </div>
@@ -1031,23 +1031,23 @@
                             <label>Lack of time</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's4_challenges', event)">
-                            <input type="checkbox" name="s4_challenges" value="Lack of motivation">
+                            <input type="checkbox" name="s4_challenges" value="Lack of motivation to follow the routine consistently">
                             <label>Lack of motivation to follow the routine consistently</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's4_challenges', event)">
-                            <input type="checkbox" name="s4_challenges" value="Forget nutrition/supplement routine">
+                            <input type="checkbox" name="s4_challenges" value="Want to be consistent but forget to follow nutrition / supplement routine">
                             <label>Want to be consistent but forget to follow nutrition / supplement routine</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's4_challenges', event)">
-                            <input type="checkbox" name="s4_challenges" value="Too much effort for complete plan">
+                            <input type="checkbox" name="s4_challenges" value="Too much effort to create a complete health / wellness plan (across workouts, nutrition, supplement)">
                             <label>Too much effort to create a complete health / wellness plan (across workouts, nutrition, supplement)</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's4_challenges', event)">
-                            <input type="checkbox" name="s4_challenges" value="Social/family commitments">
+                            <input type="checkbox" name="s4_challenges" value="Social/family commitments get in the way">
                             <label>Social/family commitments get in the way</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's4_challenges', event)">
-                            <input type="checkbox" name="s4_challenges" value="Travel disrupts routine">
+                            <input type="checkbox" name="s4_challenges" value="Travel disrupts my routine">
                             <label>Travel disrupts my routine</label>
                         </div>
                     </div>
@@ -1062,31 +1062,31 @@
                     <p class="question-hint">Select all that apply</p>
                     <div class="options-list">
                         <div class="option-item" onclick="toggleCheckbox(this, 's4_help', event)">
-                            <input type="checkbox" name="s4_help" value="Reminders / nudges">
+                            <input type="checkbox" name="s4_help" value="Reminders / nudges to stay on track">
                             <label>Reminders / nudges to stay on track</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's4_help', event)">
-                            <input type="checkbox" name="s4_help" value="Personalized plans">
+                            <input type="checkbox" name="s4_help" value="Personalized plans based on my current health / fitness levels and goals">
                             <label>Personalized plans based on my current health / fitness levels and goals</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's4_help', event)">
-                            <input type="checkbox" name="s4_help" value="Expert consultation">
+                            <input type="checkbox" name="s4_help" value="Expert consultation (doctor, nutritionist, coach)">
                             <label>Expert consultation (doctor, nutritionist, coach)</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's4_help', event)">
-                            <input type="checkbox" name="s4_help" value="Guide on tracker data">
+                            <input type="checkbox" name="s4_help" value="I do have a lot of data from trackers, guide me on what matters and how to improve">
                             <label>I do have a lot of data from trackers, guide me on what matters and how to improve</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's4_help', event)">
-                            <input type="checkbox" name="s4_help" value="Community / accountability">
+                            <input type="checkbox" name="s4_help" value="Community / accountability partner">
                             <label>Community / accountability partner</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's4_help', event)">
-                            <input type="checkbox" name="s4_help" value="Content">
+                            <input type="checkbox" name="s4_help" value="Content (tips, videos, articles) to stay motivated">
                             <label>Content (tips, videos, articles) to stay motivated</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's4_help', event)">
-                            <input type="checkbox" name="s4_help" value="Specific health solutions">
+                            <input type="checkbox" name="s4_help" value="Solutions for specific health & wellness concerns (increase muscle mass, improve sleep, address low energy levels etc)">
                             <label>Solutions for specific health & wellness concerns (increase muscle mass, improve sleep, address low energy levels etc)</label>
                         </div>
                     </div>
@@ -1156,11 +1156,11 @@
                             <label>Sexual wellness</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's5_categories', event)">
-                            <input type="checkbox" name="s5_categories" value="Nutrition">
+                            <input type="checkbox" name="s5_categories" value="Nutrition (protein, shilajit, creatine etc)">
                             <label>Nutrition (protein, shilajit, creatine etc)</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's5_categories', event)">
-                            <input type="checkbox" name="s5_categories" value="Sleep">
+                            <input type="checkbox" name="s5_categories" value="Sleep (Magnesium)">
                             <label>Sleep (Magnesium)</label>
                         </div>
                     </div>
@@ -1187,7 +1187,7 @@
                     <p class="question-hint">Select all that apply</p>
                     <div class="options-list">
                         <div class="option-item" onclick="toggleCheckbox(this, 's5_app_usage', event)">
-                            <input type="checkbox" name="s5_app_usage" value="Purchasing / reordering">
+                            <input type="checkbox" name="s5_app_usage" value="Purchasing / reordering products">
                             <label>Purchasing / reordering products</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's5_app_usage', event)">
@@ -1199,7 +1199,7 @@
                             <label>Doctor / expert consultations</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's5_app_usage', event)">
-                            <input type="checkbox" name="s5_app_usage" value="Browsing content">
+                            <input type="checkbox" name="s5_app_usage" value="Browsing content (articles, tips)">
                             <label>Browsing content (articles, tips)</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's5_app_usage', event)">
@@ -1207,7 +1207,7 @@
                             <label>Habit tracking / rewards</label>
                         </div>
                         <div class="option-item" onclick="toggleCheckbox(this, 's5_app_usage', event)">
-                            <input type="checkbox" name="s5_app_usage" value="Rarely open it">
+                            <input type="checkbox" name="s5_app_usage" value="I have it installed but rarely open it">
                             <label>I have it installed but rarely open it</label>
                         </div>
                     </div>
@@ -1262,7 +1262,7 @@
         // ==========================================
         // CONFIGURATION - UPDATE THIS URL
         // ==========================================
-        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwrMZA2dIVXaS08OJtwmN9RKpDw0auZiqcX19_PgX0asG2mwJhqEkvWeaqqzvZozXUo/exec';
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzVfYx7xh2Kn8KoXf2rm3rVJQvklOavX_LUKnbe9BsTQ9I28zU3vZ-61ALtowTEw72Z/exec';
         // ==========================================
         
         let currentSection = 1;
