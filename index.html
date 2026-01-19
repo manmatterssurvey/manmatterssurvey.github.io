@@ -602,7 +602,7 @@
                 
                 <!-- Q4: Physical Activity -->
                 <div class="question">
-                    <label class="question-label">4. How physically active are you in a typical week?</label>
+                    <label class="question-label">4. How many days in the week do you workout?</label>
                     <div class="options-list">
                         <div class="option-item" onclick="selectRadio(this, 's1_activity', event)">
                             <input type="radio" name="s1_activity" value="High (4+ times per week)">
@@ -620,6 +620,9 @@
                             <input type="radio" name="s1_activity" value="Not active (little to no exercise)">
                             <label>Not active (little to no exercise)</label>
                         </div>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <input type="text" class="text-input" name="s1_activity_other" placeholder="Other (please specify)">
                     </div>
                 </div>
                 
@@ -643,6 +646,9 @@
                             <input type="radio" name="s1_diet" value="Not very disciplined — I eat what's convenient/available">
                             <label>Not very disciplined — I eat what's convenient/available</label>
                         </div>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <input type="text" class="text-input" name="s1_diet_other" placeholder="Other (please specify)">
                     </div>
                 </div>
                 
@@ -671,7 +677,7 @@
                                     <td>
                                         <select name="s1_track_workouts_how" disabled>
                                             <option value="">Select...</option>
-                                            <option value="App designed for tracking">App designed for tracking</option>
+                                            <option value="App designed for tracking (incl. Smartphone / Fitness devices)">App designed for tracking (incl. Smartphone / Fitness devices)</option>
                                             <option value="Notes in notebook/phone">Notes in physical notebook / phone notes app</option>
                                             <option value="Other">Other</option>
                                         </select>
@@ -689,7 +695,7 @@
                                     <td>
                                         <select name="s1_track_calories_how" disabled>
                                             <option value="">Select...</option>
-                                            <option value="App designed for tracking">App designed for tracking</option>
+                                            <option value="App designed for tracking (incl. Smartphone / Fitness devices)">App designed for tracking (incl. Smartphone / Fitness devices)</option>
                                             <option value="Notes in notebook/phone">Notes in physical notebook / phone notes app</option>
                                             <option value="Other">Other</option>
                                         </select>
@@ -707,7 +713,7 @@
                                     <td>
                                         <select name="s1_track_water_how" disabled>
                                             <option value="">Select...</option>
-                                            <option value="App designed for tracking">App designed for tracking</option>
+                                            <option value="App designed for tracking (incl. Smartphone / Fitness devices)">App designed for tracking (incl. Smartphone / Fitness devices)</option>
                                             <option value="Notes in notebook/phone">Notes in physical notebook / phone notes app</option>
                                             <option value="Other">Other</option>
                                         </select>
@@ -725,7 +731,7 @@
                                     <td>
                                         <select name="s1_track_sleep_how" disabled>
                                             <option value="">Select...</option>
-                                            <option value="App designed for tracking">App designed for tracking</option>
+                                            <option value="App designed for tracking (incl. Smartphone / Fitness devices)">App designed for tracking (incl. Smartphone / Fitness devices)</option>
                                             <option value="Notes in notebook/phone">Notes in physical notebook / phone notes app</option>
                                             <option value="Other">Other</option>
                                         </select>
@@ -743,7 +749,7 @@
                                     <td>
                                         <select name="s1_track_weight_how" disabled>
                                             <option value="">Select...</option>
-                                            <option value="App designed for tracking">App designed for tracking</option>
+                                            <option value="App designed for tracking (incl. Smartphone / Fitness devices)">App designed for tracking (incl. Smartphone / Fitness devices)</option>
                                             <option value="Notes in notebook/phone">Notes in physical notebook / phone notes app</option>
                                             <option value="Other">Other</option>
                                         </select>
@@ -761,7 +767,7 @@
                                     <td>
                                         <select name="s1_track_steps_how" disabled>
                                             <option value="">Select...</option>
-                                            <option value="App designed for tracking">App designed for tracking</option>
+                                            <option value="App designed for tracking (incl. Smartphone / Fitness devices)">App designed for tracking (incl. Smartphone / Fitness devices)</option>
                                             <option value="Notes in notebook/phone">Notes in physical notebook / phone notes app</option>
                                             <option value="Other">Other</option>
                                         </select>
@@ -779,7 +785,7 @@
                                     <td>
                                         <select name="s1_track_heartrate_how" disabled>
                                             <option value="">Select...</option>
-                                            <option value="App designed for tracking">App designed for tracking</option>
+                                            <option value="App designed for tracking (incl. Smartphone / Fitness devices)">App designed for tracking (incl. Smartphone / Fitness devices)</option>
                                             <option value="Notes in notebook/phone">Notes in physical notebook / phone notes app</option>
                                             <option value="Other">Other</option>
                                         </select>
@@ -1262,7 +1268,7 @@
         // ==========================================
         // CONFIGURATION - UPDATE THIS URL
         // ==========================================
-        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzVfYx7xh2Kn8KoXf2rm3rVJQvklOavX_LUKnbe9BsTQ9I28zU3vZ-61ALtowTEw72Z/exec';
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby6KLqlUkYOVdMbXRGg5ApikbHFQdTzIbCxvMj1kvO7965E9b0V8EEKNnEOox8VChri/exec';
         // ==========================================
         
         let currentSection = 1;
@@ -1542,7 +1548,9 @@
                 s1_height: getValue('s1_height'),
                 s1_weight: getValue('s1_weight'),
                 s1_activity: getRadioValue('s1_activity'),
+                s1_activity_other: getValue('s1_activity_other'),
                 s1_diet: getRadioValue('s1_diet'),
+                s1_diet_other: getValue('s1_diet_other'),
                 s1_track_workouts: getValue('s1_track_workouts'),
                 s1_track_workouts_how: getValue('s1_track_workouts_how'),
                 s1_track_calories: getValue('s1_track_calories'),
